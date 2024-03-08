@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Adjust to stretch to use the full height */
+  background-color: #007bff;
+  padding: 1rem;
+}
+
+/* New class for the home link container */
+.home-link-container {
+  display: flex;
+  align-items: flex-end; /* Align the home link at the bottom */
+  flex-grow: 1; /* Allows it to grow and fill the space */
+  margin-left: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-end;
+  flex-grow: 2; /* Adjust as necessary */
+}
+
+.navbar li {
+  margin-left: 30px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #aad3ea;
+}
+
+.navbar ul li:last-child {
+  margin-right: 20px; /* Add margin to move the last item inward from the right edge */
+}
+
+
+
+

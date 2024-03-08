@@ -1,0 +1,21 @@
+/* home.css */
+.homeContainer {
+    text-align: center;
+    margin-top: 20vh;
+  }
+  
+  .typewriterContainer {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .socialIcon {
+    display: inline-block;
+    margin: 0 10px;
+    height: 5px;
+    width: 5px;
+    size: 15px;
+  }
+  
+  
