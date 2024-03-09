@@ -1,10 +1,13 @@
 .card {
-    padding-top: 20px;
     width: '18rem';
     margin-bottom: 20px;
     display: flex; /* Display the card as a flex container */
     flex-direction: column; /* Arrange the card contents vertically */
     height: 100%;
+}
+
+.row {
+    padding-top: 20px;
 }
   
 
