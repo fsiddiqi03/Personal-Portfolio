@@ -42,7 +42,8 @@ const projects: Project[] = [
     title: "Hand Gesture Light Control",
     description:
       "Utilized MediaPipe and OpenCV in python for hand gesture recognition, enabling philips hue light brightness control via their REST API. Brightness adjusted  based on the distance between the thumb and index finger.    ",
-    imageUrl: "https://via.placeholder.com/150",
+    imageUrl:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
     buttonUrl: "https://github.com/fsiddiqi03/Hand-Gesture-Light-Control",
   },
   {
@@ -62,7 +63,6 @@ const Projects = () => {
         {projects.map((project) => (
           <Col md={4} key={project.id}>
             <Card className="card">
-              <Card.Img className="img" variant="top" src={project.imageUrl} />
               <Card.Body className="body">
                 <Card.Title>{project.title}</Card.Title>
                 <Card.Text>{project.description}</Card.Text>

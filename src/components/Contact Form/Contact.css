@@ -1,0 +1,29 @@
+/* Contact.css */
+
+/* Contact.css */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  .contact-form-box {
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form-box h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form-floating {
+    margin-bottom: 15px;
+  }
+  
+  
+  
