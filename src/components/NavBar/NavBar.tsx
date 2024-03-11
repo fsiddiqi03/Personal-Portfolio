@@ -16,7 +16,7 @@ const NavBar = () => {
         </li>
         <li>
           <Link
-            to="https://drive.google.com/file/d/1yQjQbLoVClJgPS5BKZg-UtMoozedjDz1/view?usp=sharing"
+            to="https://drive.google.com/file/d/1mki1ei7iB_kC3BXn794uEIAros-4DtvD/view?usp=sharing"
             target="_blank"
           >
             Resume
