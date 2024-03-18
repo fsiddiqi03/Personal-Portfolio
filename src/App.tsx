@@ -4,6 +4,9 @@ import NavBar from "./components/NavBar/NavBar";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact Form/Contact";
+import Amplify from "aws-amplify";
+import awsExports from "./aws-exports";
+
 // Import other components
 
 function App() {

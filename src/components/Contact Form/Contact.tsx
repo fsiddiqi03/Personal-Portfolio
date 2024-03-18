@@ -1,7 +1,9 @@
-// Contact.tsx
+import React, { useState, FormEvent } from "react";
 
-import React, { useState } from "react";
 import "./Contact.css"; // Import CSS file for styling
+
+import API from "@aws-amplify/api";
+import post from "@aws-amplify/api";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -20,9 +22,28 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(formData);
+
+    const apiName = "formapi";
+    const path = "/contact";
+    const options = {
+      body: {
+        name: formData.name,
+        email: formData.email,
+        message: formData.comments,
+      },
+    };
+
+    try {
+      const { response } = await API.post({ apiName, path, options });
+
+      console.log("Table Updated");
+    } catch (err) {
+      console.log(err);
+    }
+
     setFormData({
       name: "",
       email: "",
