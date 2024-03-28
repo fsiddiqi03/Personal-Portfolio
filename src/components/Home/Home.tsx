@@ -24,14 +24,14 @@ const Home = () => {
 
       {/* About Me Section */}
       <p className="about-me">
-        I'm a sophomore Computer Science major at Loyola University Chicago,
-        where I discovered my passion for coding and backend development in
-        March 2023. Transitioning into CS has been a game-changer for me,
-        opening up a world where I can solve complex problems and innovate
-        behind the scenes. I especially enjoy working with AWS, leveraging its
-        power to build scalable and efficient cloud-based solutions. My journey
-        is just beginning, but I'm eager to explore the depths of coding and
-        cloud technologies further.
+        I'm a rising Junior studying Computer Science at Loyola University
+        Chicago, where I discovered my passion for coding and backend
+        development in March 2023. Transitioning into CS has been a game-changer
+        for me, opening up a world where I can solve complex problems and
+        innovate behind the scenes. I especially enjoy working with AWS,
+        leveraging its power to build scalable and efficient cloud-based
+        solutions. My journey is just beginning, but I'm eager to explore the
+        depths of coding and cloud technologies further.
       </p>
 
       {/* Social Links */}

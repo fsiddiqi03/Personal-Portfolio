@@ -8,35 +8,39 @@
       name="description"
       content="Portfolio for Faris Siddiqi"
     />
-   
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+  
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+   
     <title>Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+    
+      #tsparticles {
+        width: 100vw; 
+        height: 100vh; 
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        z-index: -1; 
+      }
+      #root {
+      z-index: 1; /* Ensure the root element is above the particles */
+    }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <div id="tsparticles"></div> <!-- Ensure this is outside the #root div -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.3/dist/tsparticles.min.js"></script>
+    <script>
+      tsParticles.load("tsparticles", { "fullScreen": true, "fpsLimit": 60, "background": { "color": { "value": "#ffffff" } }, "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": ["#ffd166", "#ef476f", "#06d6a0", "#118ab2"] }, "shape": { "type": ["circle"], "stroke": { "width": 0, "color": "#fff" }, "polygon": { "nb_sides": 5 } }, "opacity": { "value": 1, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false, "minimumValue": 0.1 } }, "size": { "value": 8, "random": true, "anim": { "enable": false, "speed": 10, "size_min": 10, "sync": false, "minimumValue": 10 } }, "line_linked": { "enable": true, "distance": 150, "color": "#808080", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 140, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 2 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
+    </script>
+   
   </body>
 </html>
