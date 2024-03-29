@@ -58,7 +58,7 @@ const projects: Project[] = [
     id: 5,
     title: "Server-less Parking Notifcation System",
     description:
-      "This system is a serverless, cloud-based architecture designed to provide real-time parking status notifications. It informs users about the current parking availability through a web application hosted on AWS, utilizing a range of AWS services for optimized performance, scalability, and reliability. Infrastructure is handled through the use of Terraform.",
+      "A serverless, cloud-based architecture designed to provide real-time parking status notifications. It informs users about the current parking availability through a web application hosted on AWS, utilizing a range of AWS services for optimized performance, scalability, and reliability. Infrastructure is handled through the use of Terraform.",
     imageUrl: "https://via.placeholder.com/150",
     buttonUrl: "https://github.com/fsiddiqi03/Parking-Status-Website",
   },

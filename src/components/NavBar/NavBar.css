@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch; /* Adjust to stretch to use the full height */
-  background-color: #007bff;
+  background-color: #0360da;
   padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 /* New class for the home link container */

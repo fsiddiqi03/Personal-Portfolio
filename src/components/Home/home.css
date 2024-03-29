@@ -5,6 +5,11 @@
   /* Required for z-index to take effect */
   z-index: 50;
   /* Ensures these elements are above the Particles' z-index of -300 */
+  background-color: white;
+  margin: 0 auto;
+  max-width: 650px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 
@@ -14,6 +19,8 @@
   z-index: 50;
   text-align: center;
   margin-top: 20vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
 }
 
 .typewriterContainer {

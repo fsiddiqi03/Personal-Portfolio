@@ -6,23 +6,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
     position: relative;
     z-index: 50;
+    height: 80vh;
   }
   
   .contact-form-box {
-    width: 500px;
+    width: 90%;
+    max-width: 500px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 50;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    margin-top: 50px;
   }
   
   .contact-form-box h2 {
     margin-bottom: 20px;
+    
   }
   
   .contact-form-floating {
