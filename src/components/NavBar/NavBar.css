@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch; /* Adjust to stretch to use the full height */
-  background-color: #0360da;
+  background-color: #ffffff;
   padding: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
@@ -29,7 +29,7 @@
 }
 
 .navbar a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
