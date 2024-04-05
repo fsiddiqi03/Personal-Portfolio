@@ -15,14 +15,6 @@ const NavBar = () => {
           <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <Link
-            to="https://drive.google.com/file/d/19uYShLS5_B4uzSIrndciqojW0OJ8q2NM/view?usp=sharing"
-            target="_blank"
-          >
-            Resume
-          </Link>
-        </li>
-        <li>
           <Link to="/contact">Contact Me</Link>
         </li>
       </ul>
