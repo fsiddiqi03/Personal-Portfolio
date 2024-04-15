@@ -67,23 +67,24 @@ const projects: Project[] = [
 const Projects = () => {
   return (
     <Container>
-      <Row className="row">
+      <Row>
         {projects.map((project) => (
-          <Col md={4} key={project.id}>
-            <Card className="card">
-              <Card.Body className="body">
-                <Card.Title>{project.title}</Card.Title>
-                <Card.Text>{project.description}</Card.Text>
-                <Button
-                  target="_blank"
-                  variant="primary"
-                  className="button"
+          <Col xs={12} key={project.id}>
+            <div className="card">
+              <div className="card-header">Personal Project</div>
+              <div className="card-body">
+                <h5 className="card-title">{project.title}</h5>
+                <p className="card-text">{project.description}</p>
+                <a
                   href={project.buttonUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-secondary"
                 >
                   Github
-                </Button>
-              </Card.Body>
-            </Card>
+                </a>
+              </div>
+            </div>
           </Col>
         ))}
       </Row>
