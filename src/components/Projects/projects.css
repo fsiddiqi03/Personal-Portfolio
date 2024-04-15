@@ -1,26 +1,29 @@
 .card {
-    width: 25rem; /* Corrected the syntax */
     margin-bottom: 30px;
+    /* Space between cards */
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: auto;
     min-height: 300px;
+    /* Minimum height of each card */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    /* Make card full width */
 }
 
 .row {
     margin-top: 10px;
-    padding-top: 20px; /* Ensure this doesn't conflict with Bootstrap styles */
+    padding-top: 20px;
 }
 
-.body {
+.card-body {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.button {
-    margin-top: auto; /* Pushes the button to the bottom of the card */
+.btn-secondary {
+    margin-top: auto;
+    /* Pushes the button to the bottom of the card */
 }
-
 
